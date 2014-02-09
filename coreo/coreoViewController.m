@@ -7,12 +7,22 @@
 //
 
 #import "coreoViewController.h"
+#import "PLTDevice.h"
 
-@interface coreoViewController ()
+@interface coreoViewController () <PLTDeviceConnectionDelegate, PLTDeviceInfoObserver>
+
+@property(nonatomic, strong)	PLTDevice				*device;
 
 @end
 
 @implementation coreoViewController
+
+#pragma mark - Private
+
+- (void)newDeviceAvailable
+
+
+#pragma mark - UIViewController
 
 - (void)viewDidLoad
 {

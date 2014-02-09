@@ -22,6 +22,7 @@
 		0209E79118A6E72D007F2749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0209E77018A6E72D007F2749 /* UIKit.framework */; };
 		0209E79918A6E72D007F2749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0209E79718A6E72D007F2749 /* InfoPlist.strings */; };
 		0209E79B18A6E72D007F2749 /* coreoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0209E79A18A6E72D007F2749 /* coreoTests.m */; };
+		0209E7B518A6EDC8007F2749 /* libPLTDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0209E7B418A6EDC8007F2749 /* libPLTDevice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,20 @@
 		0209E79618A6E72D007F2749 /* coreoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coreoTests-Info.plist"; sourceTree = "<group>"; };
 		0209E79818A6E72D007F2749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0209E79A18A6E72D007F2749 /* coreoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreoTests.m; sourceTree = "<group>"; };
+		0209E7A618A6EDC8007F2749 /* PLTCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTCalibration.h; sourceTree = "<group>"; };
+		0209E7A718A6EDC8007F2749 /* PLTConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTConfiguration.h; sourceTree = "<group>"; };
+		0209E7A818A6EDC8007F2749 /* PLTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTDevice.h; sourceTree = "<group>"; };
+		0209E7A918A6EDC8007F2749 /* PLTFreeFallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTFreeFallInfo.h; sourceTree = "<group>"; };
+		0209E7AA18A6EDC8007F2749 /* PLTGyroscopeCalibrationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTGyroscopeCalibrationInfo.h; sourceTree = "<group>"; };
+		0209E7AB18A6EDC8007F2749 /* PLTInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTInfo.h; sourceTree = "<group>"; };
+		0209E7AC18A6EDC8007F2749 /* PLTMagnetometerCalibrationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTMagnetometerCalibrationInfo.h; sourceTree = "<group>"; };
+		0209E7AD18A6EDC8007F2749 /* PLTOrientationTrackingCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTOrientationTrackingCalibration.h; sourceTree = "<group>"; };
+		0209E7AE18A6EDC8007F2749 /* PLTOrientationTrackingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTOrientationTrackingInfo.h; sourceTree = "<group>"; };
+		0209E7AF18A6EDC8007F2749 /* PLTPedometerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTPedometerInfo.h; sourceTree = "<group>"; };
+		0209E7B018A6EDC8007F2749 /* PLTProximityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTProximityInfo.h; sourceTree = "<group>"; };
+		0209E7B118A6EDC8007F2749 /* PLTTapsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTTapsInfo.h; sourceTree = "<group>"; };
+		0209E7B218A6EDC8007F2749 /* PLTWearingStateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTWearingStateInfo.h; sourceTree = "<group>"; };
+		0209E7B418A6EDC8007F2749 /* libPLTDevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPLTDevice.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0209E7B518A6EDC8007F2749 /* libPLTDevice.a in Frameworks */,
 				0209E76F18A6E72D007F2749 /* CoreGraphics.framework in Frameworks */,
 				0209E77118A6E72D007F2749 /* UIKit.framework in Frameworks */,
 				0209E76D18A6E72D007F2749 /* Foundation.framework in Frameworks */,
@@ -114,6 +130,7 @@
 		0209E77218A6E72D007F2749 /* coreo */ = {
 			isa = PBXGroup;
 			children = (
+				0209E7A418A6EDC8007F2749 /* PLTDevice */,
 				0209E77B18A6E72D007F2749 /* coreoAppDelegate.h */,
 				0209E77C18A6E72D007F2749 /* coreoAppDelegate.m */,
 				0209E77E18A6E72D007F2749 /* Main_iPhone.storyboard */,
@@ -153,6 +170,44 @@
 				0209E79718A6E72D007F2749 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0209E7A418A6EDC8007F2749 /* PLTDevice */ = {
+			isa = PBXGroup;
+			children = (
+				0209E7A518A6EDC8007F2749 /* include */,
+				0209E7B318A6EDC8007F2749 /* lib */,
+			);
+			name = PLTDevice;
+			path = ../PLTDevice;
+			sourceTree = "<group>";
+		};
+		0209E7A518A6EDC8007F2749 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0209E7A618A6EDC8007F2749 /* PLTCalibration.h */,
+				0209E7A718A6EDC8007F2749 /* PLTConfiguration.h */,
+				0209E7A818A6EDC8007F2749 /* PLTDevice.h */,
+				0209E7A918A6EDC8007F2749 /* PLTFreeFallInfo.h */,
+				0209E7AA18A6EDC8007F2749 /* PLTGyroscopeCalibrationInfo.h */,
+				0209E7AB18A6EDC8007F2749 /* PLTInfo.h */,
+				0209E7AC18A6EDC8007F2749 /* PLTMagnetometerCalibrationInfo.h */,
+				0209E7AD18A6EDC8007F2749 /* PLTOrientationTrackingCalibration.h */,
+				0209E7AE18A6EDC8007F2749 /* PLTOrientationTrackingInfo.h */,
+				0209E7AF18A6EDC8007F2749 /* PLTPedometerInfo.h */,
+				0209E7B018A6EDC8007F2749 /* PLTProximityInfo.h */,
+				0209E7B118A6EDC8007F2749 /* PLTTapsInfo.h */,
+				0209E7B218A6EDC8007F2749 /* PLTWearingStateInfo.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0209E7B318A6EDC8007F2749 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0209E7B418A6EDC8007F2749 /* libPLTDevice.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +451,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coreo/coreo-Prefix.pch";
 				INFOPLIST_FILE = "coreo/coreo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Develop/github/coreo/coreo/PLTDevice/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +468,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coreo/coreo-Prefix.pch";
 				INFOPLIST_FILE = "coreo/coreo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Develop/github/coreo/coreo/PLTDevice/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
